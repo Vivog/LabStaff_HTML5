@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="style_v.css" type="text/css">
 </head>
 <body>
+<script>
+    function my_funk(){
+                var but_aver = document.getElementById("cell_2");
+                if (but_aver.innerHTML == " "){
+                    but_aver.innerText = "11382\n12154";
+                }
+                else{
+                    but_aver.innerText = " ";
+                }
+    }
+</script>
 <table id="main_table">
     <tbody>
         <tr id="tr_1">
             <td><button><img src="res/buttonIcon/averageOklad.png" title="Средний оклад/Средний заработок"
-            onclick=document.getElementById('cell_2').innerHTML="11382\n12154"></button></td>
-            <td id="cell_2" style="font-size: xxx-large">2</td>
+            onclick = my_funk()></button></td>
+            <td id="cell_2" style="font-size: xxx-large"> </td>
             <td><button><img src="res/buttonIcon/sortUp.png"
                              title="От Я до А"></button></td>
 
